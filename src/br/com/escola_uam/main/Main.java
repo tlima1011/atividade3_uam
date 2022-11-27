@@ -45,10 +45,13 @@ public class Main {
 		            		}
 		            		ler.nextLine();
 		            }while(repetir == 'S');
-		        break;
+		            break;
 	            case 2:
+	            	System.out.print("Informe o nome para remover: ");
+	            	String clienteRemocao = ler.nextLine(); 
+	            	Cliente.removerCliente(clientes, clienteRemocao);
 	                //apagarCliente();
-	            break;
+	            	break;
 	            case 3:
 	                //apagarMontate();
 	                break;

@@ -57,6 +57,15 @@ public class Cliente {
 		        System.out.println("--------------------------------------------------------------------------------");
 		        System.out.print("Opção: ");      
 	}
+	
+	public static void removerCliente(ArrayList<Cliente> clientes, String clienteRemocao) { 
+		clienteRemocao = clienteRemocao.toUpperCase();
+		for(int i=0;i< clientes.size();i++){
+            if(clientes.get(i).nome.equalsIgnoreCase(clienteRemocao)){
+                clientes.remove(i);
+            }
+        }
+	}
 
 	
 	public static void listarClientes(ArrayList<Cliente> clientes) {  
