@@ -66,6 +66,12 @@ public class Cliente {
             }
         }
 	}
+	
+	public static void apagarMontate(ArrayList<Cliente> clientes) {
+		for(int i=0;i< clientes.size();i++){
+			clientes.get(i).gasto = 0.0; 
+        }		
+	}
 
 	
 	public static void listarClientes(ArrayList<Cliente> clientes) {  
@@ -73,6 +79,8 @@ public class Cliente {
 			System.out.println("Nome: " +clientes.get(i).nome + "\tAno de Nascimento: " +clientes.get(i).anoNascimento + "\tValor Gasto R$"+String.format("%.2f", clientes.get(i).gasto));
 		}
 	}
+
+	
 }
 	
 	

@@ -53,6 +53,12 @@ public class Main {
 	                //apagarCliente();
 	            	break;
 	            case 3:
+	            	System.out.print("Zerar todo montante: ");
+	            	Character executa = ler.nextLine().charAt(0);
+	            	executa = executa.toUpperCase(executa); 
+	            	if(executa == 'S') { 
+	            		Cliente.apagarMontate(clientes);
+	            	}
 	                //apagarMontate();
 	                break;
 	            case 4:
