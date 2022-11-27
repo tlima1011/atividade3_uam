@@ -57,7 +57,7 @@ public class Main {
 	                //montanteCliente();
 	                break;
 	            case 5:
-	                //listarClientes();
+	                Cliente.listarClientes(clientes);
 	                break;
 	            case 6:
 	                //printf("Melhor comprador");

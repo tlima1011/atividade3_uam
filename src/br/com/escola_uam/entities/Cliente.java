@@ -19,6 +19,32 @@ public class Cliente {
 		this.gasto = gasto;
 	}
 	
+	
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getAnoNascimento() {
+		return anoNascimento;
+	}
+
+	public void setAnoNascimento(int anoNascimento) {
+		this.anoNascimento = anoNascimento;
+	}
+
+	public Double getGasto() {
+		return gasto;
+	}
+
+	public void setGasto(Double gasto) {
+		this.gasto = gasto;
+	}
+
 	public static void menu() { 
 		        System.out.println("-----------------------------CADASTRO DE CLIENTES-------------------------------");
 		        System.out.println("[ 1 ] - Incluir um novo cliente ");
@@ -31,7 +57,16 @@ public class Cliente {
 		        System.out.println("--------------------------------------------------------------------------------");
 		        System.out.print("Opção: ");      
 	}
+
+	
+	public static void listarClientes(ArrayList<Cliente> clientes) {  
+		for(int i = 0; i < clientes.size();i++) {
+			System.out.println("Nome: " +clientes.get(i).nome + "\tAno de Nascimento: " +clientes.get(i).anoNascimento + "\tValor Gasto R$"+String.format("%.2f", clientes.get(i).gasto));
+		}
+	}
+}
+	
 	
 	
 
-}
+
