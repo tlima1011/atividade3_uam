@@ -73,6 +73,7 @@ public class Main {
 	                Cliente.listarClientes(clientes);
 	                break;
 	            case 6:
+	            	Cliente.melhorComprador(clientes);
 	                //printf("Melhor comprador");
 	                break;
 	        }

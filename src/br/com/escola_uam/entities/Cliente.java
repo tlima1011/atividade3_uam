@@ -90,9 +90,19 @@ public class Cliente {
 		}
 	}
 
-	
-
-	
+	public static void melhorComprador(ArrayList<Cliente> clientes) {
+		String n = clientes.get(0).nome;
+		double valor = clientes.get(0).gasto; 
+		for(int i = 1; i < clientes.size();i++) { 
+			for(int j = i; j < clientes.size();j++) { 
+				if(clientes.get(i).gasto > valor) {
+					n = clientes.get(i).nome;
+					valor = clientes.get(i).gasto;
+				}
+			}
+		}
+		System.out.println("Maior Comprador: " + n + "Com valor R$"+String.format("%.2f", valor));
+	}
 }
 	
 	
