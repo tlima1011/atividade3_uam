@@ -72,6 +72,16 @@ public class Cliente {
 			clientes.get(i).gasto = 0.0; 
         }		
 	}
+	
+	public static void montanteCliente(ArrayList<Cliente> clientes, String clienteProcura) {
+		double soma = 0.0; 
+		for(int i=0;i< clientes.size();i++){
+			if(clientes.get(i).nome.equalsIgnoreCase(clienteProcura)) {
+				soma += clientes.get(i).gasto;
+			}
+        }	
+		System.out.println("Soma Total R$"+ String.format("%.2f", soma));
+	}
 
 	
 	public static void listarClientes(ArrayList<Cliente> clientes) {  
@@ -79,6 +89,8 @@ public class Cliente {
 			System.out.println("Nome: " +clientes.get(i).nome + "\tAno de Nascimento: " +clientes.get(i).anoNascimento + "\tValor Gasto R$"+String.format("%.2f", clientes.get(i).gasto));
 		}
 	}
+
+	
 
 	
 }

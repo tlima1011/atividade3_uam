@@ -62,6 +62,10 @@ public class Main {
 	                //apagarMontate();
 	                break;
 	            case 4:
+	            	System.out.print("Informe um nome de cliente para somatória de compras: ");
+	            	String clienteProcura = ler.nextLine(); 
+	            	clienteProcura = clienteProcura.toUpperCase(); 
+	            	Cliente.montanteCliente(clientes, clienteProcura);
 	                //printf("Exibir um montante de compras de um cliente específico\n");
 	                //montanteCliente();
 	                break;
